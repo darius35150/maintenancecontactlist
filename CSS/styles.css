@@ -1,0 +1,237 @@
+body, p, ul, li, a, div, table, 
+option, select, td, html, img{
+	margin: 0;
+	padding: 0;
+}
+
+h3{
+	text-align: inherit;
+	font-family: "times";
+}
+
+/*.addDiv{
+	border-radius: 15px;
+	border-style: inset;
+	margin-left: 250px;
+}
+
+.deleteDiv{
+	border-radius: 15px;	
+	border-style: inset;
+	margin-left: 250px;
+}
+
+.searchDiv{
+	border-radius: 15px;	
+	border-style: inset;
+	display: none;
+}*/
+
+.submitButtons{
+	margin-left: 780px;
+	position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 110px;
+    border-radius: 15px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.submitButtons:hover{
+	background-color: #3e8e41;
+}
+
+.submitButtons:after{
+	 content: "";
+     background: #90EE90;
+     display: block;
+     position: absolute;
+     padding-top: 300%;
+     padding-left: 350%;
+     margin-left: -20px!important;
+     margin-top: -120%;
+     opacity: 0;
+     transition: all 0.8s
+}
+
+.submitButtons:active:after{
+	padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
+#edit{
+	margin-left: 480px;
+}
+
+#editDiv{
+	margin-left: 400px;
+}
+
+.buttons{
+	text-align: center;
+	position: relative;
+	left: -470px;
+}
+
+.buttons2{
+	text-align: center;
+	position: relative;
+	left: -700px;
+}
+
+.buttons3{
+	text-align: center;
+	position: relative;
+	left: -760px;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+ /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+body{
+	background-image: url("/img/subtle_dots_@2X.png");
+	margin: auto;
+}
+
+#bicsBuilding{
+	position: relative;
+	
+}
+
+#header{
+	margin: 0;
+	height: 304;
+	background-color: #333;
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+	opacity: 0.98;
+}
+
+.addDiv, .deleteDiv, .searchDiv{
+	background-color: white;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.addClose, .deleteClose, .searchClose{
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.addClose:hover, .deleteClose:hover, .searchClose:hover{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+} 
+.addClose:focus, .deleteClose:hover, .searchClose:hover{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#addForm, #deleteForm, #searchForm{
+	background-color: white;
+}
+
+#addForm{
+	margin-left: 250px;
+}
+
+#deleteForm{
+	margin-left: 550px;
+}
+
+#searchForm{
+	margin-left: 550px;
+}
+
+.addTitle{
+	margin-right: 850px;
+}
+
+.deleteTitle{
+	margin-right: 850px;
+}
+
+.searchTitle{
+	margin-right: 850px;
+}
